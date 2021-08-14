@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Wedding";
+  src: url("/fonts//wedding.otf");
+}
+
+audio {
+  background-color: blue;
+  width: 80px;
+}
+
+.audio {
+  position: fixed;
+}
+
+body {
+  background-color: #babfc2;
+}
+
+.navbar {
+  position: relative;
+  z-index: 0;
+}
+
+.couples {
+  font-family: "Wedding";
+  font-style: normal;
+  color: white;
+  font-size: 60px;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron {
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+  height: 850px;
+  position: relative;
+}
+
+.jumbotron .title {
+  text-align: center;
+  margin-top: 150px;
+  text-shadow: 1px 1px 18px rgba(0, 0, 0, 1);
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+#gallery {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+#gallery img {
+  width: 360px;
+  height: 360px;
+}
+
+#particles-js {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+
+#map {
+  background-color: white;
+  text-align: center;
+}
+#map iframe {
+  margin-top: 30px;
+}
+
+/* Protokol Panel*/
+.protocol-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-bottom: 120px;
+  background-color: white;
+  padding: 30px;
+}
+
+.protocol-panel .vector {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.protocol-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.protocol-panel p {
+  font-size: 14px;
+  color: gray;
+  margin-top: -5px;
+  font-weight: 200;
+}
+
+/* Couples Profile */
+.couples-profile {
+  text-align: center;
+  margin: auto;
+}
+
+.couples-profile img {
+  width: 300px;
+  height: 240px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.couples-profile h4 {
+  margin-top: 20px;
+}
+
+#date {
+  background-color: white;
+  height: 240px;
+  text-align: center;
+  margin: auto;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+  }
+
+  .couples {
+    font-size: 120px;
+  }
+}
